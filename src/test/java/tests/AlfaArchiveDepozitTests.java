@@ -14,6 +14,7 @@ public class AlfaArchiveDepozitTests {
     @Test
     @DisplayName("Checking the number of deposits")
     void AlfaArchiveDepozitTest() {
+        System.out.println(System.getProperty("java.library.path"));
         step("Open AlfaBank site", () -> {
             open("https://alfabank.ru/");
         });
