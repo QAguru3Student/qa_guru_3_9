@@ -9,12 +9,11 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class AlfaArchiveDepozitTests {
+public class AlfaArchiveDepozitTests extends TestBase {
 
     @Test
     @DisplayName("Checking the number of deposits")
     void AlfaArchiveDepozitTest() {
-        System.out.println(System.getProperty("java.library.path"));
         step("Open AlfaBank site", () -> {
             open("https://alfabank.ru/");
         });
